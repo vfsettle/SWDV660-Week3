@@ -16,9 +16,9 @@
         - nodejs
         - npm
 
-    - name: copying the application file
-      copy: 
-        src: /home/ec2-user/swdv660/helloworld.js
+    - name: dowloading the application file
+      get_url: 
+        url: /home/ec2-user/swdv660/helloworld.js
         dest: /home/ec2-user/
         owner: ec2-user
         group: ec2-user
